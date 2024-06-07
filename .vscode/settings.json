@@ -1,0 +1,15 @@
+{
+  "workbench.activityBar.location": "hidden",
+  "workbench.settings.openDefaultKeybindings": false,
+  "workbench.settings.settingsSearchTocBehavior": "filter",
+  "zenMode.hideActivityBar": true,
+  "editor.cursorStyle": "line",
+  "editor.formatOnSave": true,
+  "editor.minimap.autohide": true,
+  "files.autoSaveWhenNoErrors": true,
+  "files.defaultLanguage": "",
+  "editor.suggest.showStatusBar": false,
+  "diffEditor.wordWrap": "inherit",
+  "editor.formatOnType": false,
+  "editor.formatOnSaveMode": "file"
+}
