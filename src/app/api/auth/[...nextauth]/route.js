@@ -4,6 +4,11 @@ import GitHubProvider from "next-auth/providers/github";
 import DiscordProvider from "next-auth/providers/discord";
 
 export const authOptions = {
+  theme: {
+    colorScheme: 'auto',
+    logo: '/zuttonime.png',
+    buttonText: '#FFF'
+  },
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_ID,
@@ -18,7 +23,7 @@ export const authOptions = {
       clientSecret: process.env.DISCORD_SECRET
     })
   ],
-  NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async jwt({ token, user, account, profile, isNewUser }) {
       if (account && user) {

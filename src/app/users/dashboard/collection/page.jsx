@@ -18,7 +18,7 @@ const Page = async () => {
                 <div className="grid gap-3 md:grid-cols-5 sm:grid-cols-3 grid-cols-2 bg-color-dark-3 p-4">
                     {collection.map(collect => {
                         return (
-                            <Link href={`/anime/${collect.mal_id}`} key={collect.id} className="group border-2 border-color-primary relative block" >
+                            <Link href={`/anime/${collect.mal_id}`} key={collect.id} className="group border-2 border-color-dark-1 relative block" >
                                 <div className="relative w-full h-0 pb-[40%] sm:pb-[50%] md:pb-[75%] lg:pb-[100%]">
                                     <Image
                                         src={collect.anime_image}
@@ -30,7 +30,7 @@ const Page = async () => {
                                     />
                                 </div>
                                 <div className="text-center absolute bottom-0 w-full opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out">
-                                    <h1 className="p-2 text-bold text-color-primary md:text-[14px] sm:text-[12px] text-[10px] text-bold">{collect.anime_title}</h1>
+                                    <h1 className="p-2 text-bold text-color-dark-1 md:text-[14px] sm:text-[12px] text-[10px] text-bold">{collect.anime_title}</h1>
                                 </div>
                                 <DeleteCollection id={collect.id} title={collect.anime_title} />
                             </Link>

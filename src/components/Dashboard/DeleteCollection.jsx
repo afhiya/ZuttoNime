@@ -41,8 +41,9 @@ const DeleteCollection = ({ id, title }) => {
   }
 
   return (
-    <button className="absolute top-1 right-1 text-color-primary opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out" onClick={handleDelete}>
-      <X size={28} className='md:text-[14px] sm:text-[12px] text-[10px]' />
+    <button className="absolute top-1 right-1 text-color-dark-1" onClick={handleDelete}>
+      <X size={28} className='sm:block hidden' />
+      <X size={20} className='sm:hidden block' />
     </button>
   )
 }
